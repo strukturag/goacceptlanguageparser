@@ -71,3 +71,10 @@ func Benchmark_TestAcceptLanguageParser_de_en_us(b *testing.B) {
 		ParseAcceptLanguage(languages, []string{})
 	}
 }
+
+func Benchmark_TestAcceptLanguageParser_supportedLanguages(b *testing.B) {
+	languages := "en-US,en;q=0.8,en-UK;q=0.7;de;q=0.6;ru=0.5"
+	for i := 0; i < b.N; i++ {
+		ParseAcceptLanguage(languages, []string{"en", "de"})
+	}
+}

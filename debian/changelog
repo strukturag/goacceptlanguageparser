@@ -1,0 +1,11 @@
+goacceptlanguageparser (1.0.0) precise; urgency=low
+
+  * Public release. 
+
+ -- Simon Eisenmann <simon@struktur.de>  Thu, 13 Feb 2014 10:51:17 +0100
+
+goacceptlanguageparser (0.0.1) precise; urgency=low
+
+  * Initial debianized release.
+
+ -- Lance Cooper <lance@struktur.de>  Tue, 11 Feb 2014 16:00:34 -0600

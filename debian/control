@@ -1,0 +1,15 @@
+Source: goacceptlanguageparser
+Section: golang
+Priority: extra
+Maintainer: Simon Eisenmann <simon@struktur.de>
+Build-Depends: debhelper (>= 8.0.0),
+               dh-golang,
+               golang-go (>= 1.1)
+Standards-Version: 3.9.3
+
+Package: golang-goacceptlanguageparser-dev
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Library for detecting HTTP request language in Go
+ Processes the the contents of the Accept-Language header according
+ to priority, and allows for various filtering operations.
